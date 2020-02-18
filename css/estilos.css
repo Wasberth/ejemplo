@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes animat{
+	10%{
+		background-color: rgba(53, 164, 226, 0.4);
+	}
+	20%{
+		background-color: rgba(253, 136, 57, 0.1);
+	}
+	30%{
+		background-color: rgba(76, 236, 1, 0.0);
+	}
+	40%{
+		background-color: rgba(123, 23, 31, 0.9);
+	}
+	50%{
+		background-color: rgba(44, 215, 178, 0.5);
+	}
+	60%{
+		background-color: rgba(84, 214, 15, 0.3);
+	}
+	70%{
+		background-color: rgba(247, 146, 255, 1);
+	}
+	80%{
+		background-color: rgba(0, 45, 155, 0.6);
+	}
+	90%{
+		background-color: rgba(66, 0, 255, 0.75);
+	}
+	100%{
+		background-color: rgba(53, 164, 226, 0.4);
+	}
+}
+
+@keyframes photo{
+	from{
+		height: 150px;
+	}
+	to{
+		height: 175px;
+	}
+}
+
+@keyframes girar{
+	from{
+		transform: rotate(0deg);
+
+	}
+	to{
+		transform: rotate(360deg);
+
+	}
+}
+
+@keyframes photoo{
+	from{
+		height: 200px;
+	}
+	to{
+		height: 225px;
+	}
+}
+
+body{
+	background: url(../img/planks.jpeg);
+}
+
+header, section{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1000px;
+	border: 2px solid #365322;
+	padding: 15px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+header{
+	margin-top: 20px;
+	height: 200px;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+header .foto img{
+	height: 150px;
+	float: left;
+	margin: 10px;
+}
+
+header .txt{
+	float: left;
+	margin-left: 10px; 
+}
+
+header .pina img{
+	height: 150px;
+	float: right;
+	margin: 10px;
+	padding: 3px;
+	animation: girar 3s linear 0s infinite normal forwards running;
+}
+
+header .foto img:hover{
+	animation: photo 0.5s linear 0s 1 normal forwards running;
+}
+
+header h2, header h1{
+	margin: 30px;
+}
+
+section{
+	clear: both;
+	border-top: none;
+}
+
+section fieldset{
+	padding: 1.5rem;
+	margin: 10px;
+	background-color: rgba(53, 164, 226, 0.4); 
+}
+
+section fieldset:hover{
+	animation-name: animat;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+section fieldset legend{
+	padding: 3px;
+	border: 1px solid #557633;
+	background-color: rgba(0, 0, 226, 0.4);
+	border-radius: 10px;
+}
+
+section fieldset img{
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+
+section fieldset img:hover{
+	animation: photoo 0.5s linear 0s 1 normal forwards running;
+}
